@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    font-family: "montserrat", sans-serif;
+    font-size: 13px;
+}
 header {
     height: 100px;
     background-color: #000;
@@ -40,9 +43,16 @@ header {
 .menu li a {
     color: white;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 600;
     text-decoration: none;
-    display: block;
-    padding-left: 5px;
-    padding-right: 5px;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    align-items: center;
+    border: 5px solid #000;
+}
+.menu li a:hover,
+.menu  .active a {
+    border-bottom: 5px solid #b28756;
 }
